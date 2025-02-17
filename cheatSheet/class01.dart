@@ -54,8 +54,9 @@ void main(List<String> arguments) {
   print(goodMorning2);
   String lastName = stdin.readLineSync(encoding: utf8).toString();
   print("Nice to meet you $firstName $lastName");
-  String fullName = ($firstName + " " + $lastName");
-  
+  String fullName = firstName + " " + lastName;
+  fullName = fullName.toUpperCase();
+  print(fullName);
 
   /*
     5. Display the following SSN on the correct Format:
