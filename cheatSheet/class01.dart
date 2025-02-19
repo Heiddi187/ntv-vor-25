@@ -57,6 +57,11 @@ void main(List<String> arguments) {
   String fullName = firstName + " " + lastName;
   fullName = fullName.toUpperCase();
   print(fullName);
+  firstName = firstName.replaceAll(firstName, "Klemenz");
+  print("Now your name is $firstName");
+  fullName = firstName + lastName;
+  print(fullName);
+
 
   /*
     5. Display the following SSN on the correct Format:
@@ -65,7 +70,22 @@ void main(List<String> arguments) {
   String SSN1 = "200689-2409";
   String SSN2 = "200689 2409";
   String SSN3 = "2 006 8924 09";
+
+  SSN1 = SSN1.replaceAll("-","");
+  SSN2 = SSN2.replaceAll(" ","");
+  SSN3 = SSN3.replaceAll(" ","");
+
+  print(SSN1);
+  print(SSN2);
+  print(SSN3);
+
   /*
   Bónus task calculate the age from the SSN.
+  ADFASDAS
    */
+
+  // eitthvað til að fá isolate-a 89, draga frá 100 og plúsa 25
+  var ageOf = SSN1.substring(4,6);
+  print(100 - int.parse(ageOf) + 25);
+
 }
