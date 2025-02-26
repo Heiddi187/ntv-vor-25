@@ -14,6 +14,11 @@ void main(List<String> arguments) {
   String firstName = stdin.readLineSync(encoding: utf8).toString();
   print("Good morning $firstName would you like to learn Dart strings today?");
 
+  /*
+  string person = "gunnar";
+  print("hello $person bla bla bal");
+   */
+
   /* 1. Find a quote from a famous person you admire. Print the quote and the name of its
   author. Your output should look something like the following, including the
   quotation marks:
@@ -25,13 +30,24 @@ void main(List<String> arguments) {
   print ("Tom Wambsgans once said, 'You can't make a Tomlette without breaking some Greggs'");
 
   /*
+  string quote = "if once you don't succeed";
+  string author = "höfundur";
+
+  print(author + " " + quote);
+  eða
+  print($author $quote);
+
+   */
+
+  /*
     2. Assign a message to a variable, and print that message. Then change the value of
   the variable to a new message, and print the new message.
    */
 
   print(" ");
-  String message1 = "Ég veit ekki alveg hvort þetta er rétt svona";
-  print(message1);
+  String message = "Ég veit ekki alveg hvort þetta er rétt svona";
+  message = "Núna er þetta rétt";
+  print(message);
 
   /*
     3.  Remove all the spaces from the rhyme. And print the modified rhyme.
@@ -55,8 +71,12 @@ void main(List<String> arguments) {
   String lastName = stdin.readLineSync(encoding: utf8).toString();
   print("Nice to meet you $firstName $lastName");
   String fullName = firstName + " " + lastName;
+  // eða string fullname = "$firstname $lastname";
   fullName = fullName.toUpperCase();
   print(fullName);
+  //eða string capitalizedfirstmame = firstname.substring(0,1).touppercase + firstname.substring(1,firstname.length).tolowercase();
+  // sama fyrir seinna nafn
+  //string capitilizedfullname = "$cepfirstname $caplasatname";
   firstName = firstName.replaceAll(firstName, "Klemenz");
   print("Now your name is $firstName");
   fullName = firstName + lastName;
@@ -75,6 +95,8 @@ void main(List<String> arguments) {
   SSN2 = SSN2.replaceAll(" ","");
   SSN3 = SSN3.replaceAll(" ","");
 
+  //eða string formattedSSN = ssn1.replaceall("-", "");
+
   print(SSN1);
   print(SSN2);
   print(SSN3);
@@ -87,5 +109,8 @@ void main(List<String> arguments) {
   // eitthvað til að fá isolate-a 89, draga frá 100 og plúsa 25
   var ageOf = SSN1.substring(4,6);
   print(100 - int.parse(ageOf) + 25);
+
+  // int ssnFormatted = int.tryParse(formattedSSN1.substring(4,6));
+  // int age = ssnFormatted!
 
 }
