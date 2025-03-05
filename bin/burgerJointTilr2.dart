@@ -28,7 +28,7 @@ void main(List<String> arguments) {
       }
       print("");
       print("for a total of: $theTotal.btc");
-      print("Thank you for ordering from the Dart Burger Joint, have a nice meal");
+      print("Thank you for ordering from the Dart Burger Joint, have a nice meal!");
     }
     // invalid input function
     if (int.tryParse(item)! < -6 || int.tryParse(item)! > 6 || int.tryParse(item) == 0) {
