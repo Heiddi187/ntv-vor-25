@@ -68,8 +68,8 @@ void main() {
   cardH2.showCard();
   print(cardH2.value);
   print(cardH2.suit);
-  cardH2.addToDeck(Cards);
-  cardH3.addToDeck(Cards);
+  //cardH2.addToDeck(Cards);
+  //cardH3.addToDeck(Cards);
 
   
 }
@@ -87,8 +87,11 @@ class Cards {
   void showCard() {
     print("$suit, $value");
   }
+  /*
   void addToDeck(Cards) {
   addToDeck(Cards);
   }
+
+   */
 }
 
