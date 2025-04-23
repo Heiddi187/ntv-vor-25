@@ -10,7 +10,7 @@ void main() {
     String usernameInput = stdin.readLineSync().toString();
     print("Enter password");
     String passwordInput = stdin.readLineSync().toString();
-    final _FILE = File("files2/database.csv");
+    final _FILE = File("files/database.csv");
     final WriteTo_FILE = _FILE.openWrite(mode: FileMode.writeOnlyAppend);
     WriteTo_FILE.writeln("\n$usernameInput;$passwordInput");
     WriteTo_FILE.close();
